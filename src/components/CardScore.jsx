@@ -19,19 +19,21 @@ export const CardScore = () => {
         </div>
         <div className="container-summary">
           <h3>Summary</h3>
-          {summ.map((summary) => (
-            <li
-              key={summary.category}
-              style={{
-                color: `${summary.color}`,
-                background: `${summary.background}`
-              }}
-            >
-              <img src={`.${summary.icon}`} alt="svg-img"/>
-              <p>{summary.category} </p>
-              <span>{summary.score} / 100</span>
-            </li>
-          ))}
+          <ul>
+            {summ.map((summary) => (
+              <li
+                key={summary.category}
+                style={{
+                  color: `${summary.color}`,
+                  background: `${summary.background}`
+                }}
+              >
+                <img src={`.${summary.icon}`} alt="svg-img" />
+                <p>{summary.category} </p>
+                <span>{summary.score} / 100</span>
+              </li>
+            ))}
+          </ul>
           <button className="summary-button">Continue</button>
         </div>
       </div>

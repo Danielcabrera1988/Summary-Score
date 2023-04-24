@@ -89,6 +89,10 @@ body {
   width: 300px;
   color: black;
   align-items: flex-start;
+  margin-top: 40px;
+}
+.container-summary ul {
+  padding: 0;
 }
 .container-summary li {
   list-style: none;
