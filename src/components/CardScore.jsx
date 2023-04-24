@@ -27,7 +27,7 @@ export const CardScore = () => {
                 background: `${summary.background}`
               }}
             >
-              <img src={summary.icon} />
+              <img src={`.${summary.icon}`} />
               <p>{summary.category} </p>
               <span>{summary.score} / 100</span>
             </li>
